@@ -1,5 +1,5 @@
 return {
-  port=0 -- Port # that PictoChat runs on
+  port=0, -- Port # that PictoChat runs on
   chats={
     A={
       limit=16
@@ -12,6 +12,6 @@ return {
     },
     D={
       limit=16
-    },
+    }
   }
 }

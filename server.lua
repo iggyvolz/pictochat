@@ -3,7 +3,7 @@ if not status then error("Please install luasocket!\n"..socket) end
 local status,json=require "json"
 if not status then error("Please install luajson!\n"..json) end
 local status,settings=pcall(dofile,"settings.lua")
-if not status then error("No settings.lua found!\n"..settings) end
+if not status then error("No settings.lua found, or error in settings.lua!\n"..settings) end
 VERSION="0.1"
 server=assert(socket.bind("*",settings.port))
 do
