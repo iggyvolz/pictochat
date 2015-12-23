@@ -1,0 +1,6 @@
+Server requirements:
+lua 5.1 or higher (?)
+luajson and luasocket (installable through luarocks)
+
+Customizing:
+Create a settings.lua file (from settings.default.lua).  You can customize port number, and name and limit of chatrooms.
