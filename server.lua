@@ -1,6 +1,6 @@
 local status,socket=pcall(require,"socket")
 if not status then error("Please install luasocket!\n"..socket) end
-local status,json=require "json"
+local status,json=pcall(require,"json")
 if not status then error("Please install luajson!\n"..json) end
 local status,settings=pcall(dofile,"settings.lua")
 if not status then error("No settings.lua found, or error in settings.lua!\n"..settings) end
